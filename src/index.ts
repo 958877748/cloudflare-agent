@@ -61,7 +61,7 @@ Use bash commands to interact with the filesystem:
 
     // Stream the response
     const result = streamText({
-      model: workersai("@cf/meta/llama-3.1-70b-instruct" as Parameters<typeof workersai>[0]),
+      model: workersai("@cf/qwen/qwen3-30b-a3b-fp8" as Parameters<typeof workersai>[0]),
       tools: bashToolkit.tools,
       messages: [{ role: "user", content: message }],
       stopWhen: stepCountIs(10),
